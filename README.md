@@ -31,7 +31,7 @@ This file is particularly useful for generating phecodes from ICD tables using j
 Use [phecodeX_unrolled_ICD_CM.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.0)/phecodeX_unrolled_ICD_CM.csv) for the clinical modification of ICD used in the United States. Use [phecodeX_unrolled_ICD_WHO.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.0)/phecodeX_unrolled_ICD_WHO.csv) WHO ICD-10 codes.
 
 ### phecodeX to ICD descriptive map
-A highly descriptive file that includes both phecode strings and ICD descriptions. This file is “flat” (i.e. not “unrolled”) such that child codes are not mapped to parents. This file is useful for examining which ICDs that inform a particular phecode. The columns are as follows:
+A highly descriptive file that includes both phecode strings and ICD descriptions. This file is “flat” (i.e. not “unrolled”) such that child codes are not mapped to parents. This file is useful for examining which ICDs inform a particular phecode. The columns are as follows:
  
 - <b>phecode</b>               The phecode label
 - <b>phecode_string</b> A descriptive label for phecode
