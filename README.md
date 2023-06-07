@@ -16,7 +16,7 @@ The [phecodeX_info.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/P
     category_num    A numeric value corresponding to the phecode category
     category        A string indicating the phecode category
     sex             A string with values "Both", "Female", or "Male."  
-                    Sex specific phecodes (e.g. Prostate cancer) are labeled by                              accordingly
+                    Sex specific phecodes (e.g. Prostate cancer) are labeled accordingly
     icd10_only      A Boolean value: 1 if the phecode is defined only by ICD-10 codes;
                     0 if the phecode is defined by both ICD-9 and -10 codes
     phecode_num     The unique numeric component of the phecode label.  Can be useful for                     sorting.
@@ -44,8 +44,7 @@ A highly descriptive file that includes both phecode strings and ICD description
     category_num    A numeric value corresponding to the phecode category
     category        A string indicating the phecode category
     ICD             The ICD-9 or ICD-10 code
-    vocabulary_id   A string indicating the type of ICD code (ICD9CM,
-                    ICD10CM, or ICD10)
+    vocabulary_id   A string indicating the type of ICD code (ICD9CM, ICD10CM, or ICD10)
     ICD_string      A string description of the ICD code
     ICD_chapter     The chapter of the ICD code
  
