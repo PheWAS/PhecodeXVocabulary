@@ -19,7 +19,7 @@ This file includes information related to each phecode, including the phecode st
 - <b>phecode_num</b>   The unique numeric component of the phecode label. Can be useful for sorting
 
 
-### phecodeX unrolled maps
+### phecodeX to ICD unrolled map
  
 This file includes the ICD-9 and -10 codes that define each phecodes. All codes are “unrolled” meaning that phecode ID_002.1 implies ID_002.
 This file is particularly useful for generating phecodes from ICD tables using join my mysql or merge in R. The columns are as follows:
@@ -28,9 +28,9 @@ This file is particularly useful for generating phecodes from ICD tables using j
 - <b>ICD</b>                         The ICD code included in the phecode grouping
 - <b>vocabulary_id</b>        A string indicating the type of ICD code (ICD9CM or ICD10CM)
 
-Use phecodeX_unrolled_ICD_CM.csv for the clinical modification of ICD used in the US. For the WHO ICD-10 codes, use phecodeX_unrolled_ICD_WHO.csv.
+Use [phecodeX_unrolled_ICD_CM.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.0)/phecodeX_unrolled_ICD_CM.csv) for the clinical modification of ICD used in the US. Use [phecodeX_unrolled_ICD_WHO.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.0)/phecodeX_unrolled_ICD_WHO.csv) WHO ICD-10 codes.
 
-### phecodeX_ICD_map_flat.csv
+### phecodeX to ICD descriptive map
 A highly descriptive file that includes both phecode strings and ICD descriptions. This file is “flat” (i.e. not “unrolled”) such that child codes are not mapped to parents. This file is useful for examining which ICDs that inform a particular phecode. The columns are as follows:
  
 - <b>phecode</b>               The phecode label
@@ -41,5 +41,7 @@ A highly descriptive file that includes both phecode strings and ICD description
 - <b>vocabulary_id</b>          A string indicating the type of ICD code (ICD10)
 - <b>ICD_string</b>           The string description of the ICD code
 - <b>ICD_chapter</b>       The chapter of the ICD code
+
+Use [phecodeX_ICD_CM_map_flat.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.0)/phecodeX_ICD_CM_map_flat.csv) for the clinical modification of ICD used in the US. Use [phecodeX_ICD_WHO_map_flat.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.0)/phecodeX_ICD_WHO_map_flat.csv) WHO ICD-10 codes.
 
 For files that are compatible with the R PheWAS package, along with example code, use this [link](https://github.com/PheWAS/PhecodeX).
