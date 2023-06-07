@@ -16,18 +16,19 @@ This file includes information related to each phecode, including the phecode st
 - <b>category</b>              A string indicating the phecode category
 - <b>sex</b>                         A string with values “Both”,”Female” or “Male.” Sex-specific phecodes (e.g. Prostate cancer) are labeled by accordingly.
 - <b>icd10_only</b>          A Boolean value: 1 if the phecode is defined only by ICD-10 codes; 0 if the phecode is defined by both ICD-9 and -10 codes
-- <b>leaf</b>                       A Boolean value: 1 if the phecode has no children; 0 if the phecode has one or more children
 - <b>phecode_num</b>   The unique numeric component of the phecode label. Can be useful for sorting
 
 
-### phecodeX_unrolled.csv
+### phecodeX unrolled maps
  
 This file includes the ICD-9 and -10 codes that define each phecodes. All codes are “unrolled” meaning that phecode ID_002.1 implies ID_002.
-This file is particularly useful for generating phecodes from ICD tables using join my mysql or merge in R. (Add example pseudocode?) The columns are as follows:
+This file is particularly useful for generating phecodes from ICD tables using join my mysql or merge in R. The columns are as follows:
  
 - <b>phecode</b>               The phecode label
 - <b>ICD</b>                         The ICD code included in the phecode grouping
-- <b>flag</b>                         A numeric value 9 or 10 indicating the ICD code is ICD-9 or ICD-10
+- <b>vocabulary_id</b>        A string indicating the type of ICD code (ICD9CM or ICD10CM)
+
+Use phecodeX_unrolled_ICD_CM.csv for the clinical modification of ICD used in the US. For the WHO ICD-10 codes, use phecodeX_unrolled_ICD_WHO.csv.
 
 ### phecodeX_ICD_map_flat.csv
 A highly descriptive file that includes both phecode strings and ICD descriptions. This file is “flat” (i.e. not “unrolled”) such that child codes are not mapped to parents. This file is useful for examining which ICDs that inform a particular phecode. The columns are as follows:
@@ -37,7 +38,7 @@ A highly descriptive file that includes both phecode strings and ICD description
 - <b>category_num</b>   A numeric value corresponding to the phecode category
 - <b>category</b>              A string indicating the phecode category
 - <b>ICD</b>                         The ICD-9 or ICD-10 code
-- <b>flag</b>                         A numeric value 9 or 10 indicating the ICD code is ICD-9 or ICD-10
+- <b>vocabulary_id</b>          A string indicating the type of ICD code (ICD10)
 - <b>ICD_string</b>           The string description of the ICD code
 - <b>ICD_chapter</b>       The chapter of the ICD code
 
