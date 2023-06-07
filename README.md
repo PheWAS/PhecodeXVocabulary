@@ -38,7 +38,7 @@ A highly descriptive file that includes both phecode strings and ICD description
 - <b>category_num</b>   A numeric value corresponding to the phecode category
 - <b>category</b>              A string indicating the phecode category
 - <b>ICD</b>                         The ICD-9 or ICD-10 code
-- <b>vocabulary_id</b>          A string indicating the type of ICD code (ICD10)
+- <b>vocabulary_id</b>          A string indicating the type of ICD code (ICD9CM, ICD10CM, or ICD10)
 - <b>ICD_string</b>           The string description of the ICD code
 - <b>ICD_chapter</b>       The chapter of the ICD code
 
