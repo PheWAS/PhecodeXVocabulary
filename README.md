@@ -11,6 +11,8 @@ We have released a new version of phecodeX. The original version described in ou
 
 The new version 1.1 includes several updates, including the addition of over 850 ICD10 codes added to the ICD10-CM coding system since 2023. It also corrects spelling errors, mapping errors, and other issues that have been brought to our attention.
 
+We are still working on a WHO-compatible version for phecodeX 1.1. For now, please use the 1.0 files & stay tuned.
+
 # Information about phecodeX files
 
 ### phecodeX information file
