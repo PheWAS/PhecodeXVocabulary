@@ -61,6 +61,6 @@ A highly descriptive file that includes both phecode strings and ICD description
  
 
 
-Use [phecodeX_ICD_CM_map_flat.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.1)/phecodeX_ICD_CM_map_flat.csv) for the clinical modification of ICD used in the United States. Use [phecodeX_ICD_WHO_map_flat.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.1)/phecodeX_ICD_WHO_map_flat.csv) WHO ICD-10 codes.
+Use [phecodeX_ICD_CM_map_flat.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.1)/phecodeX_ICD_CM_map_flat.csv) for the clinical modification of ICD used in the United States. Use [phecodeX_ICD_WHO_map_flat.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.0)/phecodeX_ICD_WHO_map_flat.csv) WHO ICD-10 codes.
 
 For files that are compatible with the R PheWAS package, along with example code, use this [link](https://github.com/PheWAS/PhecodeX). (Currently v1.0; never version coming soon!)
