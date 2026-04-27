@@ -11,6 +11,8 @@ We have released a new version of phecodeX. The original version described in ou
 
 The new version 1.1 includes several updates, including the addition of over 850 ICD10 codes added to the ICD10-CM coding system since 2023. It also corrects spelling errors, mapping errors, and other issues that have been brought to our attention.
 
+# Information about phecodeX files
+
 ### phecodeX information file
 
 The [phecodeX_info.csv](https://github.com/PheWAS/PhecodeXVocabulary/blob/main/PhecodeX%20(version%201.0)/phecodeX_info.csv) file includes information related to each phecode, including the phecode string, category, and columns indicating sex-specificity and ICD-10 only status. The columns are as follows:
